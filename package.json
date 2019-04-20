@@ -1,8 +1,10 @@
 {
-  "name": "utils",
+  "name": "utils-helper",
   "version": "0.0.1",
   "description": "utils",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "module": "./es/index.js",
+  "typings": "lib/index.d.ts",
   "scripts": {
     "build": "npm run clear && npm run build:es && npm run build:rollup && gulp",
     "build:es": "tsc",
@@ -12,7 +14,6 @@
   },
   "author": "",
   "license": "ISC",
-  "typings": "./typings",
   "devDependencies": {
     "del": "^4.1.0",
     "gulp": "^4.0.0",
