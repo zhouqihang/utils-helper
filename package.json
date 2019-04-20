@@ -4,7 +4,9 @@
   "description": "utils",
   "main": "index.js",
   "scripts": {
-    "build": "npm run clear && tsc && tsc -m ES2015 --outDir ./es",
+    "build": "npm run clear && npm run build:es && npm run build:rollup && gulp",
+    "build:es": "tsc",
+    "build:rollup": "rollup -c",
     "clear": "node ./del.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,6 +15,12 @@
   "typings": "./typings",
   "devDependencies": {
     "del": "^4.1.0",
+    "gulp": "^4.0.0",
+    "rollup": "^1.10.0",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-sourcemaps": "^0.4.2",
+    "rollup-plugin-typescript": "^1.0.1",
+    "tslib": "^1.9.3",
     "typescript": "^3.4.1"
   }
 }

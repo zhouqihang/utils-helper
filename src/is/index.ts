@@ -12,6 +12,13 @@ export const isString: (value: any) => boolean = (value) => typeof value === 'st
  */
 export const isNumber: (value: any) => boolean = (value) => typeof value === 'number';
 
+const IsUtil = {
+    isString,
+    isNumber,
+};
+
+export default IsUtil;
+
 // TODO
 // isPromise
 // isArray

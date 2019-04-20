@@ -70,8 +70,11 @@ class DateUtil {
         if (date instanceof Date) {
             this.date = date;
         }
-        else {
+        else if (date) {
             this.date = new Date(date);
+        }
+        else {
+            this.date = new Date();
         }
         return this;
     }

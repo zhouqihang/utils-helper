@@ -10,3 +10,8 @@ export declare const isString: (value: any) => boolean;
  * @returns A boolean value
  */
 export declare const isNumber: (value: any) => boolean;
+declare const IsUtil: {
+    isString: (value: any) => boolean;
+    isNumber: (value: any) => boolean;
+};
+export default IsUtil;

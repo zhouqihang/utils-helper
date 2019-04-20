@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../../src/math/index.ts"],"names":[],"mappings":"AAAA,OAAO;AACP,OAAO;AACP,cAAc"}
+{"version":3,"file":"index.js","sources":["../../src/math/index.ts"],"sourcesContent":["// TODO\n// 取随机数\n// 四舍五入，保留N位小数\n"],"names":[],"mappings":";;;;;CAAA;CACA;CACA,cAAc;;;;"}
